@@ -20,7 +20,6 @@ score = 0
 font = pygame.font.SysFont("monospace", 35)
 
 def set_level(score, speed):
-    #global speed
     if score < 10:
         speed = 8
     elif score < 20:
@@ -69,17 +68,6 @@ def check_collision(enemy_list, player_pos):
         if detect_collisions(player_pos, enemy):
             return True
     return False
-
-    # alternative code, check if it works
-    # p_x = player_pos[0]
-    # p_y = player_pos[1]
-    # for enemy in enemy_list:    
-    #     e_x = enemy[0]
-    #     e_y = enemy[1]
-    #     if (e_x >= p_x and e_x < (p_x + player_size)) or (e_x <= p_x and p_x < (e_x + enemy_size)):
-    #         if (e_y >= p_y and e_y < (p_y + player_size)) or (p_y >= e_y and p_y < (e_y + enemy_size)):
-    #             return True
-    #         return False
 
 def main ():
     global speed, death_count
