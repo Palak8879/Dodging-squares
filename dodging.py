@@ -1,4 +1,4 @@
-# dodging game using tutorial by keith galli
+# dodging squares game 
 
 import pygame
 import random
